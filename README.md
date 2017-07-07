@@ -66,7 +66,7 @@ You may access the module by importing it into your `app.js`:
         // Do something with rendered HTML
     });
 
-     markedejs.renderFile('markdown.md', users, function (err, html) {
+    markedejs.renderFile('markdown.md', users, function (err, html) {
         // Do something with rendered HTML
     });
 
@@ -80,7 +80,7 @@ If `markdown.md` contained the following:
     
     <ul>
       <% for (var i = 0; i < users.length; i++) { %>
-        <li>**User ID:** <%= user[i].id %> -- **Email:** <%= user[i].email %><li>
+        <li>**User ID:** <%= users[i].id %> -- **Email:** <%= users[i].email %><li>
       <% } %>
     </ul>
 
